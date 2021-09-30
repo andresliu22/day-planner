@@ -1,17 +1,21 @@
 $(document).ready(function () {
+    getTime()
+    setColorCoded()
+    setSchedule()
+
+    // Update time every second
+    setInterval(getTime, 1000);
+
+    // Update colors every 5 minutes
+    setInterval(setColorCoded, 300000);
+});
+
+function getTime() {
     $("#currentDay").text(moment().format("dddd, MMMM Do YYYY, h:mm:ss a"));
+}
 
-    if (JSON.parse(localStorage.getItem("schedule")) != null) {
-        var dayScheduler = JSON.parse(localStorage.getItem("schedule")); 
-        $('.input-schedule').each(function(i, obj) {
-            if (dayScheduler[i] != null) {
-                $(obj).val(dayScheduler[i]);
-            }
-        });
-    }
-
-    let currentTime = moment().format('H');
-
+function setColorCoded() {
+    var currentTime = moment().format('H');
     $('.task-th').each( function(i, obj) {
         if (i > currentTime - 9) {
             $(obj).addClass("past");
@@ -24,10 +28,20 @@ $(document).ready(function () {
             $(obj).children().addClass("future");
         }
     })
+}
 
-});
+function setSchedule() {
+    if (JSON.parse(localStorage.getItem("schedule")) != null) {
+        var dayScheduler = JSON.parse(localStorage.getItem("schedule")); 
+        $('.input-schedule').each(function(i, obj) {
+            if (dayScheduler[i] != null) {
+                $(obj).val(dayScheduler[i]);
+            }
+        });
+    }
+}
 
-$(".saveBtn").on("click", function(event) {
+function saveTask(event) {
     var index = $(this).closest('.container').find('.saveBtn').index(this);
     console.log($(this).index(this));
     var btnClicked = $(event.target);
@@ -45,5 +59,6 @@ $(".saveBtn").on("click", function(event) {
     } else {
         alert("Please write task before save");
     }
-    
-})
+}
+
+$(".saveBtn").on("click", saveTask);

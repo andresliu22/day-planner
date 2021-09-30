@@ -1,89 +1,56 @@
-# 05 Third-Party APIs: Work Day Scheduler
+# Work Day Scheduler
 
-## Your Task
+Plan your day using this work day scheduler and organize your tasks
 
-Create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+## Site Picture
 
-You'll need to use the [Moment.js](https://momentjs.com/) library to work with date and time. Be sure to read the documentation carefully and concentrate on using Moment.js in the browser.
+![Site](./Assets/site-picture.PNG)
 
-## User Story
+## Getting Started
 
-```md
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
-```
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-## Acceptance Criteria
+* Click on the green button named Code on github and copy the URL of the repository.
+* Use the command git clone (repository's URL) to clone all existing project on your local machine.
+* Start your testing with your own clone of the repository using your preferred code editor.
 
-```md
-GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
-WHEN I scroll down
-THEN I am presented with timeblocks for standard business hours
-WHEN I view the timeblocks for that day
-THEN each timeblock is color coded to indicate whether it is in the past, present, or future
-WHEN I click into a timeblock
-THEN I can enter an event
-WHEN I click the save button for that timeblock
-THEN the text for that event is saved in local storage
-WHEN I refresh the page
-THEN the saved events persist
-```
+## Prerequisites
 
-The following animation demonstrates the application functionality:
+* Git
 
-![A user clicks on slots on the color-coded calendar and edits the events.](./Assets/05-third-party-apis-homework-demo.gif)
+## Installing
 
+* Fork the project to get your own copy of the repository.
+* Clone the repository.
+* Make your changes and testing.
+* Deploy on github by going to the repository and on settings in the pages tab save the source to main for deployment and demo.
 
-## Grading Requirements
+## Built With
 
-This homework is graded based on the following criteria: 
+* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+* [Javascript](https://developer.mozilla.org/en-US/docs/Web/javascript)
 
-### Technical Acceptance Criteria: 40%
+## Deployed Link
 
-* Satisfies all of the above acceptance criteria plus the following:
+* [See Live Site](https://andresliu22.github.io/day-planner/)
 
-  * Uses a date utility library to work with date and time
+## Authors
 
-### Deployment: 32%
+* **Andres Liu** 
 
-* Application deployed at live URL
+## Contacts
 
-* Application loads with no errors
+- [Link to Portfolio Site](https://andresliu22.github.io/portfolio/)
+- [Link to Github](https://github.com/andresliu22/)
+- [Link to LinkedIn](https://www.linkedin.com/in/andresliu22/)
 
-* Application GitHub URL submitted
+## License
 
-* GitHub repo contains application code
+This project is licensed under the MIT License.
 
-### Application Quality: 15%
+## Acknowledgments
 
-* Application user experience is intuitive and easy to navigate
-
-* Application user interface style is clean and polished
-
-* Application resembles the mock-up functionality provided in the homework instructions
-
-### Repository Quality: 13%
-
-* Repository has a unique name
-
-* Repository follows best practices for file structure and naming conventions
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages
-
-* Repository contains quality README file with description, screenshot, and link to deployed application
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application
-
-* The URL of the GitHub repository, with a unique name and a README describing the project
-
-- - -
-© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+* Always do some research to get the best possible way to code anything.
+* Make the website and code easy to read for viewers and other developers by using brief comments.
+* Be use to commit to get an insight of what you have done for each progress you make.
