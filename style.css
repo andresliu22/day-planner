@@ -76,3 +76,7 @@ textarea{
   height: 100%;
   border-style: none;
 }
+
+input:focus {
+  outline: none;
+}
