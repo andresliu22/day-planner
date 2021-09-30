@@ -1,6 +1,6 @@
 # Work Day Scheduler
 
-Plan your day using this work day scheduler and organize your tasks
+Plan your day using this work day scheduler and organize your tasks.
 
 ## Site Picture
 
@@ -30,6 +30,9 @@ These instructions will get you a copy of the project up and running on your loc
 * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 * [Javascript](https://developer.mozilla.org/en-US/docs/Web/javascript)
+* [JQuery](https://jquery.com/)
+* [Bootstrap](https://getbootstrap.com/)
+* [Moment.js](https://momentjs.com/docs/)
 
 ## Deployed Link
 
