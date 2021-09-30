@@ -10,16 +10,26 @@ $(document).ready(function () {
         });
     }
 
-    
+    let currentTime = moment().format('H');
 
-    
+    $('.task-th').each( function(i, obj) {
+        if (i > currentTime - 9) {
+            $(obj).addClass("past");
+            $(obj).children().addClass("past");
+        } else if (i == currentTime - 9){
+            $(obj).addClass("present");
+            $(obj).children().addClass("present");
+        } else {
+            $(obj).addClass("future");
+            $(obj).children().addClass("future");
+        }
+    })
 
-    
 });
 
 $(".saveBtn").on("click", function(event) {
     var index = $(this).closest('.container').find('.saveBtn').index(this);
-
+    console.log($(this).index(this));
     var btnClicked = $(event.target);
     var inputValue = btnClicked.closest('tr').children().eq(1).children().val();
 
@@ -29,7 +39,11 @@ $(".saveBtn").on("click", function(event) {
         var dayScheduler = [];
     }
     
-    dayScheduler[parseInt(index)] = inputValue;
-    localStorage.setItem("schedule", JSON.stringify(dayScheduler));
-
+    if (inputValue.replace(/ /g, "") != "") {
+        dayScheduler[parseInt(index)] = inputValue;
+        localStorage.setItem("schedule", JSON.stringify(dayScheduler));
+    } else {
+        alert("Please write task before save");
+    }
+    
 })
