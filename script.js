@@ -19,7 +19,7 @@ function getTime() {
 function setColorCoded() {
     var currentTime = moment().format('H');
     $('.task-th').each( function(i, obj) {
-        if (i > currentTime - 9) {
+        if (i < currentTime - 9) {
             $(obj).addClass("past");
             $(obj).children().addClass("past");
         } else if (i == currentTime - 9){
