@@ -10,10 +10,12 @@ $(document).ready(function () {
     setInterval(setColorCoded, 300000);
 });
 
+// Get the current time of the day
 function getTime() {
     $("#currentDay").text(moment().format("dddd, MMMM Do YYYY, h:mm:ss a"));
 }
 
+// Set tasks with colors if they past, present or future
 function setColorCoded() {
     var currentTime = moment().format('H');
     $('.task-th').each( function(i, obj) {
@@ -30,6 +32,7 @@ function setColorCoded() {
     })
 }
 
+// Set schedule tasks saved in local storage
 function setSchedule() {
     if (JSON.parse(localStorage.getItem("schedule")) != null) {
         var dayScheduler = JSON.parse(localStorage.getItem("schedule")); 
@@ -41,6 +44,7 @@ function setSchedule() {
     }
 }
 
+// Save task to local storage
 function saveTask(event) {
     var index = $(this).closest('.container').find('.saveBtn').index(this);
     console.log($(this).index(this));
