@@ -4,7 +4,7 @@ Plan your day using this work day scheduler and organize your tasks.
 
 ## Site Picture
 
-![Site](./assets/site-img.PNG)
+![Site](./assets/images/site-img.PNG)
 
 ## Getting Started
 
